@@ -54,8 +54,7 @@ def readGM (fname):
 # ------------------------------------------------------------------
 #
 # ------------------------------ Newmark Method ---------------
-# Only for linear systems
-# provides increments
+# This formulation only works for linear systems
 def newbet(acc_s, damp, ww, dtime, gamma, beta, dd, vv, aa):
     #
     cc = 2.*damp*ww
