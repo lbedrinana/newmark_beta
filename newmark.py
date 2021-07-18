@@ -4,8 +4,8 @@
 #=========================================================
 # Coded by Luis Bedriñana,
 #          Universidad de Ingenieria y Tecnologia - UTEC    
-#          Jun, 2020
-# Version: 1.1
+#          Jul, 2020
+# Version: 1.02
 # 
 # Script to analyze the dynamic linear response of 1-DOF subjected to GM record by the
 # Newmark beta method
@@ -127,14 +127,8 @@ for xwave in GM_acc:
     #outNewbet = newbet(acc_s, damp, ww, dtime, gamma, beta, dd, vv, aa)
     dd, vv, aa = newbet(acc_s, damp, ww, dtime, gamma, beta, dd, vv, aa)
     # tuplet output ddn, vn, an, ant
-    # updating values
-    #dd = float(outNewbet[0])
-    #vv = float(outNewbet[1])
-    #aa = float(outNewbet[2])
-    #
     # total acceleration
     aat = aa + acc_s
-    #
     # saving output 
     Xd.append(dd)
     #Xa.append(aa)
